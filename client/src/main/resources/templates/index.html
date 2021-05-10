@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
+        <script charset="UTF-8" type="text/javascript">
+            window["adrum-start-time"] = new Date().getTime();
+            (function(config){
+                config.appKey = "AD-AAB-ABD-XCS";
+                config.adrumExtUrlHttp = "http://cdn.appdynamics.com";
+                config.adrumExtUrlHttps = "https://cdn.appdynamics.com";
+                config.beaconUrlHttp = "http://pdx-col.eum-appdynamics.com";
+                config.beaconUrlHttps = "https://pdx-col.eum-appdynamics.com";
+                config.resTiming = {"bufSize":200,"clearResTimingOnBeaconSend":true};
+                config.maxUrlLength = 512;
+            })(window["adrum-config"] || (window["adrum-config"] = {}));
+        </script>
+        <script src="//cdn.appdynamics.com/adrum/adrum-21.2.0.3385.js"></script>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Employees</title>
@@ -10,6 +24,9 @@
         <link rel="stylesheet" href="../css/shards.min.css">
     </head>
     <body>
+
+
+
         <div th:switch="${employees}" class="container my-5">
             <div class="row">
                 <div class="col-md-6">
