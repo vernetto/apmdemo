@@ -1,11 +1,13 @@
 
 https://spring.io/guides/tutorials/rest/
 
+
+curl -X POST localhost:8082/employees -H 'Content-type:application/json' -d '{"name": "Wilhelm Tell", "role": "archer"}'
+curl -X POST localhost:8082/employees -H 'Content-type:application/json' -d '{"name": "Guillaume Henri Dufour", "role": "general"}'
 curl -v localhost:8082/employees
+curl -v localhost:8082/employees/1
 curl -v localhost:8082/employees/99
 
-curl -X POST localhost:8082/employees -H 'Content-type:application/json' -d '{"name": "Samwise Gamgee", "role": "gardener"}'
-curl -X POST localhost:8082/employees -H 'Content-type:application/json' -d '{"name": "Wilhelm Tell", "role": "archer"}'
 
 
 in Intellij, edit run configuration and set in VM Options:

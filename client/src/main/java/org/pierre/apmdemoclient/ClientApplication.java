@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
@@ -26,9 +27,11 @@ public class ClientApplication {
     @Bean
     public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
         return args -> {
-            EmployeeEntity employee1 = restTemplate.getForObject(
-                    "http://localhost:8082/employees/1", EmployeeEntity.class);
-            log.info(employee1.toString());
+            ResponseEntity<EmployeeEntity[]> response = restTemplate.getForEntity("http://localhost:8082/employees/", EmployeeEntity[].class);
+            EmployeeEntity[] employees = response.getBody();
+            for (EmployeeEntity employeeEntity : employees) {
+                log.info(employeeEntity.toString());
+            }
         };
     }
 }

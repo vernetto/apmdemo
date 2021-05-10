@@ -9,10 +9,24 @@ import java.util.List;
 public class ServerController {
     @Autowired
     private EmployeeRepository repository;
+    static int count = 0;
 
     @GetMapping("/employees")
-    List<EmployeeEntity> all() {
+    List<EmployeeEntity> all() throws Exception {
+        count++;
+        if (count % 10 == 0) throw new Exception("random exception");
+        if (count % 10 == 1) {
+            slowMethod();
+        };
         return repository.findAll();
+    }
+
+    private void slowMethod() {
+        try {
+            Thread.sleep(1000);
+        }
+        catch (Exception e) {}
+        ;
     }
 
     @PostMapping("/employees")
