@@ -15,14 +15,25 @@ in Intellij, edit run configuration and set in VM Options:
 -javaagent:D:\apps\AppServerAgent-21.4.0.32403\javaagent.jar -Dappdynamics.agent.applicationName=APMDEMO -Dappdynamics.agent.tierName=SERVERSIDE -Dappdynamics.agent.nodeName=MYLAPTOP
 
 
+PIERLUIGI
 presidio202104290344197.saas.appdynamics.com
 presidio202104290344197
 https://urldefense.com/v3/__https://presidio202104290344197.saas.appdynamics.com:443/controller__;!!GF_29dbcQIUBPA!ndIbZ9CLBzcgOY2hnI1-hQgUuibl8a0UrpQeLyhn-KZ4shJDepROom8dAqtWfeMdj2825w$
+License ID: 161970297959IQT
 
+
+PIOTR
+https://urldefense.com/v3/__https:/hepburn202105120948466.saas.appdynamics.com:443/controller__;!!GF_29dbcQIUBPA!m9KSKgTUqov1uepmWDo-MVmB8CBjd0mLxvRejc3sQ3ToIKmL-achXO-aAFHuPfhr$
+hepburn202105120948466
+piotr_pniak@epam.com
+VgMLbP#R6nbWrzar1
 
 
 Browser
 PVUI
 AD-AAB-ABD-XCS
 
+https://www.postgresql.org/docs/9.1/creating-cluster.html
+initdb -D /usr/local/pgsql/data
+.\pg_ctl.exe -D D:\pierre\postgres start
 
