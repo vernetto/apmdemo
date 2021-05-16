@@ -24,14 +24,5 @@ public class ClientApplication {
         return builder.build();
     }
 
-    @Bean
-    public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
-        return args -> {
-            ResponseEntity<EmployeeEntity[]> response = restTemplate.getForEntity("http://localhost:8082/employees/", EmployeeEntity[].class);
-            EmployeeEntity[] employees = response.getBody();
-            for (EmployeeEntity employeeEntity : employees) {
-                log.info(employeeEntity.toString());
-            }
-        };
-    }
+
 }

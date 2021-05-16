@@ -29,11 +29,18 @@ piotr_pniak@epam.com
 VgMLbP#R6nbWrzar1
 
 
-Browser
+== Browser
 PVUI
 AD-AAB-ABD-XCS
 
+
+
+== DB AGENT
 https://www.postgresql.org/docs/9.1/creating-cluster.html
 initdb -D /usr/local/pgsql/data
 .\pg_ctl.exe -D D:\pierre\postgres start
 
+cd D:\apps\db-agent-21.4.0.2358
+java -jar .\db-agent.jar
+
+jdbc:postgresql://localhost:5432/postgres
