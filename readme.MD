@@ -11,21 +11,24 @@ https://github.com/vernetto/apmdemo
 
 download the:
 a) APPLICATION driver 
+
 -javaagent:D:\apps\AppServerAgent-21.4.0.32403\javaagent.jar -Dappdynamics.agent.applicationName=APMDEMO -Dappdynamics.agent.tierName=CLIENTSIDE -Dappdynamics.agent.nodeName=MYLAPTOP_CL
 
 b) DATABASE driver
+
 java -jar .\db-agent.jar
 
 c) MACHINE driver
+
 java -jar machineagent.jar
 
 no need for UI driver, just download a piece of JS code to embed in your pages
 
 Concepts:
-ENDPOINTS
-BUSINESS TRANSACTIONS
-BASELINE
-TRANSACTION SNAPSHOTS
+* ENDPOINTS
+* BUSINESS TRANSACTIONS
+* BASELINE
+* TRANSACTION SNAPSHOTS
 
 
 
