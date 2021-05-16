@@ -44,3 +44,8 @@ cd D:\apps\db-agent-21.4.0.2358
 java -jar .\db-agent.jar
 
 jdbc:postgresql://localhost:5432/postgres
+
+
+== machine agent
+java -jar machineagent.jar
+
