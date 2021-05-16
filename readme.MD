@@ -8,8 +8,10 @@ hepburn202105120948466
 here is the sample code:
 https://github.com/vernetto/apmdemo
 
+using a Portgres DB jdbc:postgresql://localhost:5432/postgres user postgres pw root
 
 download the:
+
 a) APPLICATION driver 
 
 -javaagent:D:\apps\AppServerAgent-21.4.0.32403\javaagent.jar -Dappdynamics.agent.applicationName=APMDEMO -Dappdynamics.agent.tierName=CLIENTSIDE -Dappdynamics.agent.nodeName=MYLAPTOP_CL
@@ -28,7 +30,30 @@ Concepts:
 * ENDPOINTS
 * BUSINESS TRANSACTIONS
 * BASELINE
-* TRANSACTION SNAPSHOTS
+* TRANSACTION SNAPSHOTS (taken on error, slow tx and every 10 minutes)
+
+
+
+Show the code of ClientController and ServerController
+
+APPLICATION : Analysis of a ERROR SNAPSHOT starting from CLIENT tier (Application/Errors)
+
+correlation happens with Request GUID - you can colletare across tiers
+
+APPLICATION : Analysis of a SLOW SNAPSHOT starting from CLIENT tier (Application/Transaction Snapshots/All Snapshots) and show Call Graph
+
+
+
+USER EXPERIENCE : Geo Classification, Browser Snapshots of slow interactions
+
+
+DATABASES : Queries, View Execution Plan
+
+
+ALERTS
+
+
+
 
 
 
