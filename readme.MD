@@ -38,7 +38,7 @@ Show the code of ClientController and ServerController
 
 APPLICATION : Analysis of a ERROR SNAPSHOT starting from CLIENT tier (Application/Errors)
 
-correlation happens with Request GUID - you can colletare across tiers
+correlation happens with Request GUID - you can correlate across tiers
 
 APPLICATION : Analysis of a SLOW SNAPSHOT starting from CLIENT tier (Application/Transaction Snapshots/All Snapshots) and show Call Graph
 
