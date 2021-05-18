@@ -53,11 +53,12 @@ DATABASES : Queries, View Execution Plan
 ALERTS
 
 
-PAC = 1
 
-account is disabled 
+presentation available on:
 
+https://www.youtube.com/watch?v=FjGCoj7oOtI Part 1
 
+https://www.youtube.com/watch?v=EdDjF0ZatOk  Part 2
 
 
 

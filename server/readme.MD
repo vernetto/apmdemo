@@ -47,5 +47,6 @@ jdbc:postgresql://localhost:5432/postgres
 
 
 == machine agent
+cd D:\apps\machineagent-bundle-64bit-windows-21.4.0.3075
 java -jar machineagent.jar
 
